@@ -16,3 +16,7 @@ export const deleteUserInfo= async(id)=>{
 export const postUserinfo=async(newdata)=>{
     return api.post('/adduser', newdata);
 }
+
+export const UpdateUserInfo =async(id,updateData)=>{
+    return api.put('/update/'+id, updateData);
+}
